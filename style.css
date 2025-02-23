@@ -4,13 +4,10 @@
 
 html, body {
     margin: 0;
-    font-family: 'Orbitron';
-/*    font-family: 'American Typewriter';*/
+    padding: 0 90px;
+    font-family: 'Orbitron', sans-serif;
     color: whitesmoke;
     font-size: 22px;
-/*    margin: 0% 10% 0% 10%;*/
-    padding-left: 90px;
-    padding-right: 90px;
 }
 
 a {
@@ -25,36 +22,28 @@ body {
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/initrode-wp-digital.jpg) 10% 90%;
-/*    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/initrode-wp-desk.jpeg) 20% 80%;*/
-/*    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/initrode-wp-deskwide.webp) 20% 80%;*/
-/*    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(images/initrode-wp-multicubes.jpg) 20% 80%;    */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/initrode-wp-digital.jpg) center center;
     background-size: cover;
-    background-attachment: none;
+    background-attachment: fixed;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 @media screen and (max-width: 768px) {
     html, body {
-        font-size: 15px;
-        font-family: "Arial";
-        background-size: auto;
-        background-position: center;
-}
-    img {
-        scale: 50%;
+        padding: 0 45px;
+        font-size: 18px;
+        font-family: Orbitron, sans-serif;
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 480px) {
     html, body {
-        font-size: 10px;
-        font-family: "Orbitron";
-        background-size: auto;
-        background-position: center;
-}
-    img {
-        scale: 30%;
+        padding: 0 20px;
+        font-size: 16px;
+        font-family: Orbitron, sans-serif;
     }
 }
-
